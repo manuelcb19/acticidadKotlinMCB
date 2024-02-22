@@ -1,5 +1,7 @@
 package com.example.kotlinmcb
 
+import LoginFragment
+import RegistroFragment
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -15,9 +17,14 @@ class AuthActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        if (auth.currentUser != null) {
+       /* if (auth.currentUser != null) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
+        }*/
+        if (savedInstanceState != null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, LoginFragment())
+                .commit()
         }
 
         if (savedInstanceState == null) {
