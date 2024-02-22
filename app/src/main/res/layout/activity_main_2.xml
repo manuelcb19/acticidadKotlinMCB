@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="247dp"
-        android:layout_height="35dp"
+        android:layout_width="271dp"
+        android:layout_height="252dp"
         android:fontFamily="monospace"
         android:text="Bienvenido a la App"
         android:textColor="#E60404"
