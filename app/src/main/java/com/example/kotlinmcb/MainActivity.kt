@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val btnChangeColor = findViewById<Button>(R.id.btnChangeColor)
         val btnSwitchActivity = findViewById<Button>(R.id.btnSwitchActivity)
         val editTextMessage = findViewById<EditText>(R.id.editTextMessage)
-        val btnGoToLogin = findViewById<Button>(R.id.btnGoToLogin)  // Añadir este botón
+        val btnGoToLogin = findViewById<Button>(R.id.btnGoToLogin)
 
         btnChangeColor.setOnClickListener {
             val newColor = Color.rgb((0..255).random(), (0..255).random(), (0..255).random())
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Configurar el botón para ir al LoginFragment
+        // Configurar el botón para ir al fragments.LoginFragment
         btnGoToLogin.setOnClickListener {
             val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)

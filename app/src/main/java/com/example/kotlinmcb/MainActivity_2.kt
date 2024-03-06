@@ -10,7 +10,7 @@ class MainActivity_2 : AppCompatActivity() {
         setContentView(R.layout.activity_main_2)
 
 
-        val message = intent.getStringExtra("EXTRA_MESSAGE")
+        val message = intent.getStringExtra("Mensaje de prueba")
 
         val textView = findViewById<TextView>(R.id.textView)
         textView.text = "Bienvenido a la App\n$message"

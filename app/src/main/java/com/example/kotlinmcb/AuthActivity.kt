@@ -1,7 +1,7 @@
 package com.example.kotlinmcb
 
-import LoginFragment
-import RegistroFragment
+import fragments.LoginFragment
+import fragments.RegistroFragment
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

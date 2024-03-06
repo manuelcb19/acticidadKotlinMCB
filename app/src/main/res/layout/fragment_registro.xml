@@ -10,9 +10,11 @@
         android:id="@+id/linearLayoutRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerInParent="true"
-        tools:ignore="LabelFor">
+        android:orientation="vertical"
+        tools:ignore="LabelFor"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="266dp">
 
         <EditText
             android:id="@+id/editTextEmailRegistro"
